@@ -1,0 +1,119 @@
+.edit-task-form {
+  padding: 40px;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-task-form__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.edit-task-form__field__title {
+  color: white;
+  background-color: #DC143C;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 10px;
+  padding: 0px 5px;
+}
+
+.edit-task-form__field--task-title,
+.edit-task-form__field--task-description,
+.edit-task-form__field--task-deadline {
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #DC143C;
+  padding: 5px;
+}
+
+.edit-task-form__field--task-title {
+  font-size: large;
+}
+
+.edit-task-form__field--task-description {
+  height: 100px;
+  resize: none;
+}
+
+.edit-task-form__field--task-priority {
+  margin: 15px 0px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.edit-task-form__field--task-priority__item {
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #DC143C;
+  border-radius: 10px;
+  padding: 0px 10px;
+  transition: 0.5s;
+
+  &.active-priority {
+    transition: 0.5s;
+    background-color: #DC143C;
+    color: white;
+  }
+}
+
+.edit-task-form__save-button {
+  height: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #DC143C;
+  border: 1px solid #DC143C;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  box-shadow: 0px 3px 5px rgb(178, 34, 34);
+  &:hover {
+    transition: 0.5s;
+    background: white;
+    color: black;
+  }
+  &:active {
+    transition: 0.1s;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px rgb(178, 34, 34);
+  }
+}
+
+.edit-task__form__file-upload {
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #DC143C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DC143C;
+  margin-bottom: 10px;
+}
+
+.edit-task__form__file-upload__drop-area {
+  display: flex;
+  border: 5px dashed #DC143C;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #DC143C;
+}
+
+@media screen and (max-width: 500px) {
+  .edit-task-form {
+    padding: 5px;
+  }
+
+  .edit-task__form__file-upload,
+  .upload {
+    display: none;
+  }
+}

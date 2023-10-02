@@ -1,0 +1,49 @@
+.modal-window{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    position:fixed;
+    overflow-y: auto;
+    z-index: 1;
+    
+    .modal__content-wrapper {
+        display: flex;
+        margin: auto;
+        opacity: 1;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .modal__content {
+        max-height: 80vh;
+        max-width: 80vw;
+    }
+    
+    .closeIcon {
+        margin-top: -30px;
+        margin-left: 0px;
+        height: 30px;
+        width: 30px;
+    }
+    .closeIcon:hover {
+        transform: scale(1.1);
+    }
+    .closeIcon:active {
+        transform: scale(1);
+    }
+}
+
+
+.scroll-hide {
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+
+    .closeIcon {
+        display: none;
+    }
+
+}

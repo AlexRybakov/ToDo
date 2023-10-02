@@ -1,0 +1,40 @@
+.task-detail {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 640px;
+  min-height: 400px;
+  background-color: white;
+  .task__description {
+    margin: 50px 0px;
+  }
+}
+
+.task-detail__input-comment {
+  display: flex;
+  margin-top: 10px;
+}
+
+.task-detail__input-comment__area {
+  padding: 5px;
+  box-shadow: 0px 0px 0px 2px rgba(235, 235, 235, 0.75) inset;
+  border: 0px;
+  border-radius: 5px 0px 0px 5px;
+  resize: none;
+  width: 225px;
+  height: 30px;
+}
+
+.task-detail__input-comment__send-button {
+  border: 2px solid rgba(235, 235, 235, 0.75);
+  background-color: rgba(235, 235, 235, 0.75);
+  border-radius: 0px 5px 5px 0px;
+  height: 30px;
+  width: 80px;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 0px 0px 1px rgba(235, 235, 235, 0.75) inset;
+  }
+}
