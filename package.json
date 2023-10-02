@@ -1,7 +1,6 @@
 {
   "name": "todo-app",
   "version": "0.1.0",
-  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -24,6 +23,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "deploy-gh": "cross-env PUBLIC_URL=./ REACT_APP_GH_PAGES=true npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.0.0"
   }
 }
